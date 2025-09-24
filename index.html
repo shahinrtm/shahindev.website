@@ -1,99 +1,1049 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Official website of Shahin Developer showcasing projects and expertise in web development.">
-    <title>Shahin Developer Co.</title>
+    <meta name="description" content="Shahin Developer is a digital product studio delivering premium web experiences for ambitious brands.">
+    <title>Shahin Developer ï¿½ Digital Product Studio</title>
     <link rel="icon" href="/static/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#EEF2FF',
+                            100: '#E0E7FF',
+                            200: '#C7D2FE',
+                            300: '#A5B4FC',
+                            400: '#818CF8',
+                            500: '#6366F1',
+                            600: '#4F46E5',
+                            700: '#4338CA',
+                            800: '#3730A3',
+                            900: '#312E81'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Figtree', 'Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
+                        display: ['Poppins', 'Figtree', 'Inter', 'Segoe UI', 'sans-serif'],
+                        fa: ['Vazirmatn', 'Tahoma', 'Arial', 'sans-serif']
+                    },
+                    boxShadow: {
+                        glow: '0 25px 50px -12px rgba(99, 102, 241, 0.45)'
+                    }
+                }
+            }
+        };
+    </script>
+    <script>
+        function langApp() {
+    const copy = {
+        "nav": {
+            "services": {
+                "en": "Services",
+                "fa": "خدمات"
+            },
+            "projects": {
+                "en": "Projects",
+                "fa": "پروژه‌ها"
+            },
+            "process": {
+                "en": "Process",
+                "fa": "فرآیند"
+            },
+            "testimonials": {
+                "en": "Testimonials",
+                "fa": "نظرات مشتریان"
+            },
+            "contact": {
+                "en": "Contact",
+                "fa": "تماس"
+            },
+            "cta": {
+                "en": "Let's talk",
+                "fa": "بیایید صحبت کنیم"
+            }
+        },
+        "hero": {
+            "badge": {
+                "en": "Digital experience design",
+                "fa": "طراحی تجربه‌های دیجیتال"
+            },
+            "headlinePrimary": {
+                "en": "Premium web products that convert.",
+                "fa": "محصولات وب ممتاز که تبدیل ایجاد می‌کنند."
+            },
+            "headlineAccent": {
+                "en": "Crafted for bold businesses.",
+                "fa": "ساخته‌شده برای کسب‌وکارهای جسور."
+            },
+            "blurb": {
+                "en": "Shahin Developer partners with visionary teams to design, build, and scale digital experiences that feel effortless. We merge research-driven strategy, polished UI engineering, and modern aesthetics to accelerate your growth.",
+                "fa": "شاهین دولوپر با تیم‌های آینده‌نگر همکاری می‌کند تا تجربه‌های دیجیتال روان را طراحی، توسعه و مقیاس دهد. استراتژی مبتنی بر تحقیق، مهندسی دقیق رابط کاربری و زیبایی‌شناسی مدرن را ترکیب می‌کنیم تا رشد شما سرعت بگیرد."
+            },
+            "primaryCta": {
+                "en": "Explore projects",
+                "fa": "مشاهده پروژه‌ها"
+            },
+            "secondaryCta": {
+                "en": "Schedule a call",
+                "fa": "تنظیم یک تماس"
+            },
+            "stats": [
+                {
+                    "value": {
+                        "en": "8+",
+                        "fa": "۸+"
+                    },
+                    "label": {
+                        "en": "Years shipping UI",
+                        "fa": "سال تجربه عرضه رابط کاربری"
+                    }
+                },
+                {
+                    "value": {
+                        "en": "45+",
+                        "fa": "۴۵+"
+                    },
+                    "label": {
+                        "en": "Products delivered",
+                        "fa": "محصول تحویل‌شده"
+                    }
+                },
+                {
+                    "value": {
+                        "en": "92%",
+                        "fa": "۹۲٪"
+                    },
+                    "label": {
+                        "en": "Repeat partnerships",
+                        "fa": "همکاری‌های مجدد"
+                    }
+                },
+                {
+                    "value": {
+                        "en": "24/7",
+                        "fa": "۲۴/۷"
+                    },
+                    "label": {
+                        "en": "Launch support",
+                        "fa": "پشتیبانی راه‌اندازی"
+                    }
+                }
+            ],
+            "feature": {
+                "label": {
+                    "en": "Feature Project",
+                    "fa": "پروژه شاخص"
+                },
+                "year": {
+                    "en": "2025",
+                    "fa": "۲۰۲۵"
+                },
+                "title": {
+                    "en": "jib.plus - Gift Cards",
+                    "fa": "jib.plus - کارت هدیه"
+                },
+                "body": {
+                    "en": "Automated identity verification, instant delivery, and a brand system that elevates trust for global shoppers.",
+                    "fa": "احراز هویت خودکار، تحویل فوری و سیستم برند یکپارچه که اعتماد خریداران جهانی را تقویت می‌کند."
+                },
+                "cta": {
+                    "en": "Visit website",
+                    "fa": "بازدید از وب‌سایت"
+                }
+            }
+        },
+        "services": {
+            "tag": {
+                "en": "Services",
+                "fa": "خدمات"
+            },
+            "title": {
+                "en": "End-to-end digital craftsmanship",
+                "fa": "استادی دیجیتال از ابتدا تا انتها"
+            },
+            "blurb": {
+                "en": "We shape future-proof products with conversion-focused UX, modern engineering, and brand systems that stand out across every screen.",
+                "fa": "با UX متمرکز بر تبدیل، مهندسی مدرن و سیستم‌های برند چشمگیر، محصولاتی آینده‌محور می‌سازیم."
+            },
+            "cards": [
+                {
+                    "title": {
+                        "en": "Product Strategy & Research",
+                        "fa": "استراتژی و تحقیق محصول"
+                    },
+                    "body": {
+                        "en": "Customer interviews, positioning, and data-backed playbooks that clarify what to build and why it matters.",
+                        "fa": "مصاحبه‌های مشتری، تعیین جایگاه و پلی‌بوک‌های مبتنی بر داده مشخص می‌کند چه چیزی بسازیم و چرا مهم است."
+                    },
+                    "bullets": [
+                        {
+                            "en": "- Discovery & market fit",
+                            "fa": "- کشف و تناسب بازار"
+                        },
+                        {
+                            "en": "- CX mapping",
+                            "fa": "- نقشه‌برداری تجربه مشتری"
+                        },
+                        {
+                            "en": "- Growth & analytics setup",
+                            "fa": "- راه‌اندازی رشد و تحلیل"
+                        }
+                    ]
+                },
+                {
+                    "title": {
+                        "en": "Interface & Experience Design",
+                        "fa": "طراحی رابط و تجربه"
+                    },
+                    "body": {
+                        "en": "Tailored design systems, micro-interactions, and high-fidelity prototypes that make your brand unforgettable.",
+                        "fa": "سیستم‌های طراحی سفارشی، ریزتعاملات و نمونه‌های اولیه با وفاداری بالا برند شما را ماندگار می‌کند."
+                    },
+                    "bullets": [
+                        {
+                            "en": "- Responsive UI systems",
+                            "fa": "- سیستم‌های رابط کاربری واکنش‌گرا"
+                        },
+                        {
+                            "en": "- Interactive prototyping",
+                            "fa": "- نمونه‌سازی تعاملی"
+                        },
+                        {
+                            "en": "- Brand visual identity",
+                            "fa": "- هویت بصری برند"
+                        }
+                    ]
+                },
+                {
+                    "title": {
+                        "en": "Development & Launch",
+                        "fa": "توسعه و راه‌اندازی"
+                    },
+                    "body": {
+                        "en": "Production-grade engineering, performance tuning, and support to launch fast with confidence.",
+                        "fa": "مهندسی در سطح تولید، تنظیم عملکرد و پشتیبانی برای راه‌اندازی سریع و مطمئن."
+                    },
+                    "bullets": [
+                        {
+                            "en": "- Front-end engineering",
+                            "fa": "- مهندسی فرانت‌اند"
+                        },
+                        {
+                            "en": "- CMS & e-commerce builds",
+                            "fa": "- پیاده‌سازی CMS و تجارت الکترونیک"
+                        },
+                        {
+                            "en": "- QA + performance audits",
+                            "fa": "- ارزیابی QA و عملکرد"
+                        }
+                    ]
+                }
+            ]
+        },
+        "projects": {
+            "tag": {
+                "en": "Projects",
+                "fa": "پروژه‌ها"
+            },
+            "title": {
+                "en": "Selected launches & experiments",
+                "fa": "لانچ‌ها و تجربه‌های منتخب"
+            },
+            "blurb": {
+                "en": "Every engagement is tailored for measurable outcomes—conversion lifts, faster onboarding, and experiences your community loves sharing.",
+                "fa": "هر همکاری برای نتایج قابل اندازه‌گیری تنظیم می‌شود؛ افزایش تبدیل، پذیرش سریع‌تر و تجربه‌هایی که جامعه شما دوست دارد به اشتراک بگذارد."
+            },
+            "cta": {
+                "en": "Request case study",
+                "fa": "درخواست مطالعه موردی"
+            },
+            "cards": [
+                {
+                    "badge": {
+                        "en": "Scale",
+                        "fa": "مقیاس"
+                    },
+                    "title": {
+                        "en": "jib.plus - Gift card marketplace",
+                        "fa": "jib.plus - بازار کارت هدیه"
+                    },
+                    "body": {
+                        "en": "E-commerce experience with automated compliance, custom CMS, and 42% uplift in repeat purchases.",
+                        "fa": "تجربه تجارت الکترونیک با رعایت خودکار قوانین، CMS سفارشی و رشد ۴۲٪ در خریدهای تکراری."
+                    },
+                    "tags": [
+                        "Next.js",
+                        "Branding",
+                        "Automation"
+                    ]
+                },
+                {
+                    "badge": {
+                        "en": "In progress",
+                        "fa": "در حال انجام"
+                    },
+                    "timeline": {
+                        "en": "Q3 2025",
+                        "fa": "سه‌ماهه سوم ۲۰۲۵"
+                    },
+                    "title": {
+                        "en": "AI Customer Concierge",
+                        "fa": "دستیار مشتری هوش مصنوعی"
+                    },
+                    "body": {
+                        "en": "Conversational AI playbooks for hospitality with seamless POS integrations and analytics dashboards.",
+                        "fa": "پلی‌بوک‌های گفتگومحور برای صنعت مهمان‌نوازی با یکپارچه‌سازی روان POS و داشبوردهای تحلیلی."
+                    },
+                    "tags": [
+                        "Design System",
+                        "AI",
+                        "Dashboard"
+                    ]
+                },
+                {
+                    "badge": {
+                        "en": "Opportunity",
+                        "fa": "فرصت"
+                    },
+                    "timeline": {
+                        "en": "Available",
+                        "fa": "آماده همکاری"
+                    },
+                    "title": {
+                        "en": "Your next launch",
+                        "fa": "لانچ بعدی شما"
+                    },
+                    "body": {
+                        "en": "Ready to co-create a flagship experience? We build high-converting SaaS dashboards, e-commerce flows, and immersive marketing sites.",
+                        "fa": "آماده‌اید یک تجربه شاخص را با هم بسازیم؟ داشبوردهای SaaS با نرخ تبدیل بالا، فلوهای تجارت الکترونیک و وب‌سایت‌های مارکتینگ تعاملی می‌سازیم."
+                    },
+                    "bullets": [
+                        {
+                            "en": "- 3-week design sprints",
+                            "fa": "- اسپرینت‌های طراحی سه‌هفته‌ای"
+                        },
+                        {
+                            "en": "- Embedded dev team",
+                            "fa": "- تیم توسعه یکپارچه"
+                        },
+                        {
+                            "en": "- Growth analytics baked in",
+                            "fa": "- تحلیل‌های رشد در بطن محصول"
+                        }
+                    ]
+                }
+            ]
+        },
+        "process": {
+            "tag": {
+                "en": "Process",
+                "fa": "فرآیند"
+            },
+            "title": {
+                "en": "A rhythm built for momentum",
+                "fa": "ریتمی برای حفظ شتاب"
+            },
+            "blurb": {
+                "en": "We plug into your team, run fast discovery, and avoid handoffs through a shared workflow. Expect clarity, transparency, and a partner that ships.",
+                "fa": "به تیم شما متصل می‌شویم، کشف سریع انجام می‌دهیم و با جریان کاری مشترک از تحویل‌های متعدد جلوگیری می‌کنیم. انتظار شفافیت، سرعت و همراهی‌ای که نتیجه می‌دهد داشته باشید."
+            },
+            "steps": [
+                {
+                    "index": {
+                        "en": "01",
+                        "fa": "۰۱"
+                    },
+                    "title": {
+                        "en": "Discover & align",
+                        "fa": "کشف و هم‌راستاسازی"
+                    },
+                    "body": {
+                        "en": "Stakeholder interviews, success metrics, and competitive research align the roadmap around what moves the needle.",
+                        "fa": "مصاحبه با ذی‌نفعان، شاخص‌های موفقیت و تحقیق رقابتی، نقشه راه را حول عوامل اثرگذار هم‌راستا می‌کند."
+                    },
+                    "bullets": [
+                        {
+                            "en": "- Kickoff workshops",
+                            "fa": "- کارگاه‌های شروع"
+                        },
+                        {
+                            "en": "- Brand & UX audit",
+                            "fa": "- ارزیابی برند و UX"
+                        },
+                        {
+                            "en": "- Success metric stack",
+                            "fa": "- سبد شاخص‌های موفقیت"
+                        }
+                    ]
+                },
+                {
+                    "index": {
+                        "en": "02",
+                        "fa": "۰۲"
+                    },
+                    "title": {
+                        "en": "Design & iterate",
+                        "fa": "طراحی و تکرار"
+                    },
+                    "body": {
+                        "en": "Rapid ideation, design sprints, and weekly stakeholder reviews keep momentum high and feedback actionable.",
+                        "fa": "ایده‌پردازی سریع، اسپرینت‌های طراحی و بازبینی هفتگی ذی‌نفعان، شتاب را بالا نگه می‌دارد و بازخورد را قابل اقدام می‌کند."
+                    },
+                    "bullets": [
+                        {
+                            "en": "- Live Figma delivery",
+                            "fa": "- تحویل زنده در فیگما"
+                        },
+                        {
+                            "en": "- Interactive prototypes",
+                            "fa": "- نمونه‌های اولیه تعاملی"
+                        },
+                        {
+                            "en": "- Usability validations",
+                            "fa": "- اعتبارسنجی قابلیت استفاده"
+                        }
+                    ]
+                },
+                {
+                    "index": {
+                        "en": "03",
+                        "fa": "۰۳"
+                    },
+                    "title": {
+                        "en": "Build & launch",
+                        "fa": "ساخت و راه‌اندازی"
+                    },
+                    "body": {
+                        "en": "Rigorous front-end builds, QA automation, and launch war rooms ensure your go-live is fast, stable, and measurable.",
+                        "fa": "پیاده‌سازی دقیق فرانت‌اند، خودکارسازی QA و اتاق‌های فرمان راه‌اندازی تضمین می‌کند انتشار شما سریع، پایدار و قابل سنجش باشد."
+                    },
+                    "bullets": [
+                        {
+                            "en": "- Engineering & QA",
+                            "fa": "- مهندسی و QA"
+                        },
+                        {
+                            "en": "- Performance tuning",
+                            "fa": "- تنظیم عملکرد"
+                        },
+                        {
+                            "en": "- Growth analytics",
+                            "fa": "- تحلیل‌های رشد"
+                        }
+                    ]
+                }
+            ]
+        },
+        "testimonials": {
+            "tag": {
+                "en": "Testimonials",
+                "fa": "نظرات مشتریان"
+            },
+            "title": {
+                "en": "Trusted by founders & growth teams",
+                "fa": "مورد اعتماد بنیان‌گذاران و تیم‌های رشد"
+            },
+            "blurb": {
+                "en": "We build partnerships that feel like an in-house team—transparent, proactive, and focused on measurable impact.",
+                "fa": "شراکت‌هایی می‌سازیم که مانند تیم داخلی شما عمل می‌کند؛ شفاف، پیش‌قدم و متمرکز بر اثر قابل اندازه‌گیری."
+            },
+            "items": [
+                {
+                    "name": {
+                        "en": "Neda Farhadi",
+                        "fa": "ندا فرهادی"
+                    },
+                    "role": {
+                        "en": "CEO, Lumen Commerce",
+                        "fa": "مدیرعامل، لومِن کامرس"
+                    },
+                    "quote": {
+                        "en": "\"From the first roadmap session, Shahin's team felt embedded. They launched our new storefront in four weeks and lifted conversion by 38%. Their attention to detail and responsiveness is rare.\"",
+                        "fa": "«از نخستین جلسه نقشه‌راه، تیم شاهین بخشی از تیم ما شد. فروشگاه جدید را در چهار هفته راه‌اندازی کردند و نرخ تبدیل را ۳۸٪ بالا بردند. دقت و پاسخ‌گویی‌شان کم‌نظیر است.»"
+                    }
+                },
+                {
+                    "name": {
+                        "en": "Arman Jalili",
+                        "fa": "آرمان جلیلی"
+                    },
+                    "role": {
+                        "en": "Head of Product, Nova AI",
+                        "fa": "رئیس محصول، نوا AI"
+                    },
+                    "quote": {
+                        "en": "\"They translated complex AI workflows into onboarding flows our customers loved. Weekly demos, crisp documentation, and zero surprises on launch day.\"",
+                        "fa": "«فرآیندهای پیچیده هوش مصنوعی ما را به تجربه‌های ورودی تبدیل کردند که مشتریان واقعاً دوست داشتند. دموی هفتگی، مستندسازی شفاف و بدون هیچ غافلگیری در روز لانچ.»"
+                    }
+                }
+            ]
+        },
+        "contact": {
+            "tag": {
+                "en": "Contact",
+                "fa": "تماس"
+            },
+            "title": {
+                "en": "Let's orchestrate your next big launch",
+                "fa": "بیایید لانچ بزرگ بعدی شما را هماهنگ کنیم"
+            },
+            "blurb": {
+                "en": "Tell us about the challenge you are solving—product redesign, brand refresh, or growth experiment. We respond within 24 hours with next steps.",
+                "fa": "به ما بگویید در حال حل چه چالشی هستید؛ بازطراحی محصول، نوسازی برند یا آزمایش رشد. ظرف ۲۴ ساعت با گام‌های بعدی پاسخ می‌دهیم."
+            },
+            "emailLabel": {
+                "en": "info@shahindev.com",
+                "fa": "info@shahindev.com"
+            },
+            "socials": {
+                "twitter": {
+                    "en": "Twitter",
+                    "fa": "توییتر"
+                },
+                "instagram": {
+                    "en": "Instagram",
+                    "fa": "اینستاگرام"
+                }
+            },
+            "panelTitle": {
+                "en": "Project kickoff essentials",
+                "fa": "ملزومات آغاز پروژه"
+            },
+            "panelBody": {
+                "en": "Share your vision, key metrics, timeline, and stakeholders. We will craft a tailored roadmap and team setup within two business days.",
+                "fa": "چشم‌انداز، شاخص‌های کلیدی، زمان‌بندی و ذی‌نفعان را با ما به اشتراک بگذارید. ظرف دو روز کاری نقشه راه و ترکیب تیم متناسب را آماده می‌کنیم."
+            },
+            "panelBullets": [
+                {
+                    "en": "- Strategic workshop (remote or on-site)",
+                    "fa": "- کارگاه راهبردی (حضوری یا آنلاین)"
+                },
+                {
+                    "en": "- Team augmentation or full delivery",
+                    "fa": "- تقویت تیم یا تحویل کامل"
+                },
+                {
+                    "en": "- Transparent weekly reporting",
+                    "fa": "- گزارش‌دهی هفتگی شفاف"
+                }
+            ],
+            "panelCta": {
+                "en": "Book a discovery call",
+                "fa": "رزرو جلسه آشنایی"
+            }
+        },
+        "footer": {
+            "brandTag": {
+                "en": "Shahin Developer",
+                "fa": "شاهین دولوپر"
+            },
+            "brandSubtitle": {
+                "en": "Digital Product Studio",
+                "fa": "استودیوی محصول دیجیتال"
+            },
+            "about": {
+                "en": "Designing, building, and scaling digital products with character. Based in Tehran, partnering with teams worldwide.",
+                "fa": "طراحی، ساخت و مقیاس‌دهی محصولات دیجیتال متمایز. مستقر در تهران و همکار تیم‌ها در سراسر جهان."
+            },
+            "columns": {
+                "studio": {
+                    "heading": {
+                        "en": "Studio",
+                        "fa": "استودیو"
+                    },
+                    "links": [
+                        {
+                            "href": "#services",
+                            "label": {
+                                "en": "Services",
+                                "fa": "خدمات"
+                            }
+                        },
+                        {
+                            "href": "#projects",
+                            "label": {
+                                "en": "Work",
+                                "fa": "نمونه کار"
+                            }
+                        },
+                        {
+                            "href": "#process",
+                            "label": {
+                                "en": "Process",
+                                "fa": "فرآیند"
+                            }
+                        }
+                    ]
+                },
+                "connect": {
+                    "heading": {
+                        "en": "Connect",
+                        "fa": "ارتباط"
+                    },
+                    "links": [
+                        {
+                            "href": "mailto:info@shahindev.com",
+                            "label": {
+                                "en": "Email",
+                                "fa": "ایمیل"
+                            }
+                        },
+                        {
+                            "href": "https://twitter.com/shahin_g_rostami",
+                            "label": {
+                                "en": "Twitter",
+                                "fa": "توییتر"
+                            }
+                        },
+                        {
+                            "href": "https://instagram.com/shahin_g_rostami",
+                            "label": {
+                                "en": "Instagram",
+                                "fa": "اینستاگرام"
+                            }
+                        }
+                    ]
+                },
+                "newsletter": {
+                    "heading": {
+                        "en": "Newsletter",
+                        "fa": "خبرنامه"
+                    },
+                    "text": {
+                        "en": "Monthly insights on product design, performance, and launch strategy.",
+                        "fa": "بینش‌های ماهانه درباره طراحی محصول، عملکرد و استراتژی لانچ."
+                    },
+                    "cta": {
+                        "en": "Join the list",
+                        "fa": "عضویت در فهرست"
+                    }
+                }
+            },
+            "meta": {
+                "rights": {
+                    "en": "&copy; 2025 Shahin Developer. Crafted in Tehran with global ambition.",
+                    "fa": "© ۲۰۲۵ شاهین دولوپر. ساخته‌شده در تهران با چشم‌انداز جهانی."
+                },
+                "website": {
+                    "en": "Website",
+                    "fa": "وب‌سایت"
+                }
+            }
+        }
+    };
+    return {
+        lang: 'en',
+        menuOpen: false,
+        copy,
+        setLang(value) { this.lang = value; this.menuOpen = false; },
+        isFa() { return this.lang === 'fa'; }
+    };
+}
+window.langApp = langApp;
+</script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Figtree', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+        .font-fa { font-family: 'Vazirmatn', 'Tahoma', 'Arial', sans-serif; }
+        [x-cloak] { display: none !important; }
+    </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
-    <header class="bg-gray-800 text-white">
-        <div class="container mx-auto px-6 py-4 flex items-center justify-between">
-            <div class="flex items-center space-x-4">
-                <img src="/static/logo.svg" alt="Shahin Developer Logo" class="w-12 h-12">
-                <h1 class="text-xl font-bold">Shahin Developer</h1>
-            </div>
-            <nav>
-                <ul class="flex space-x-6">
-                    <li><a href="#about" class="hover:text-yellow-400">About</a></li>
-                    <li><a href="#projects" class="hover:text-yellow-400">Projects</a></li>
-                    <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
-                </ul>
+<body x-data="langApp()" x-bind:dir="isFa() ? 'rtl' : 'ltr'" x-bind:data-lang="lang" class="bg-slate-950 text-slate-100 antialiased selection:bg-brand-400 selection:text-slate-950">
+    <div class="relative overflow-hidden" x-bind:class="isFa() ? 'font-fa' : ''">
+        <div class="absolute inset-x-0 -top-40 -z-10 flex justify-center blur-3xl">
+            <div class="h-80 w-[42rem] bg-gradient-to-br from-brand-500/40 via-amber-400/30 to-emerald-400/25 opacity-70"></div>
+        </div>
+
+        <header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-slate-950/70 backdrop-blur-xl">
+            <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 lg:px-8">
+                <a href="#home" class="flex items-center space-x-3" x-bind:class="isFa() ? 'space-x-reverse' : ''">
+                    <img src="/static/logo.svg" alt="Shahin Developer logo" class="h-12 w-12">
+                    <div x-bind:class="isFa() ? 'text-right' : ''">
+                        <span class="block text-[11px] text-white/60" x-bind:class="isFa() ? '' : 'uppercase tracking-[0.35em]'" x-text="isFa() ? copy.footer.brandTag.fa : copy.footer.brandTag.en"></span>
+                        <span class="block text-lg font-semibold text-white" x-text="isFa() ? copy.footer.brandSubtitle.fa : copy.footer.brandSubtitle.en"></span>
+                    </div>
+                </a>
+                <div class="hidden items-center space-x-10 text-sm font-medium text-white/70 lg:flex" x-bind:class="isFa() ? 'space-x-reverse' : ''">
+                    <a href="#services" class="transition hover:text-white" x-text="copy.nav.services[lang]"></a>
+                    <a href="#projects" class="transition hover:text-white" x-text="copy.nav.projects[lang]"></a>
+                    <a href="#process" class="transition hover:text-white" x-text="copy.nav.process[lang]"></a>
+                    <a href="#testimonials" class="transition hover:text-white" x-text="copy.nav.testimonials[lang]"></a>
+                    <a href="#contact" class="transition hover:text-white" x-text="copy.nav.contact[lang]"></a>
+                </div>
+                <div class="hidden items-center gap-3 lg:flex">
+                    <div class="flex items-center rounded-full border border-white/20 bg-white/5 p-1 text-xs font-semibold">
+                        <button @click="setLang('en')" class="rounded-full px-3 py-1 transition" x-bind:class="lang === 'en' ? 'bg-white text-slate-950 shadow' : 'text-white/70 hover:text-white'">EN</button>
+                        <button @click="setLang('fa')" class="rounded-full px-3 py-1 transition" x-bind:class="lang === 'fa' ? 'bg-white text-slate-950 shadow' : 'text-white/70 hover:text-white'">??</button>
+                    </div>
+                    <a href="#contact" class="rounded-full bg-gradient-to-r from-brand-500 to-cyan-400 px-5 py-2 text-sm font-semibold text-slate-950 shadow-glow transition hover:-translate-y-0.5 hover:shadow-xl" x-text="copy.nav.cta[lang]"></a>
+                </div>
+                <button @click="menuOpen = !menuOpen" class="rounded-full border border-white/20 p-2 text-white transition hover:border-white/40 lg:hidden">
+                    <span class="sr-only">Toggle navigation</span>
+                    <svg x-show="!menuOpen" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <svg x-cloak x-show="menuOpen" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
             </nav>
-        </div>
-    </header>
-
-    <section id="about" class="py-16 bg-white">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4">About Me</h2>
-            <p class="text-lg text-gray-700">Hi, I am Shahin, the CEO of Shahin Developer. I specialize in building innovative and high-quality websites. My passion lies in creating new and unique business solutions that drive success. With every project, I aim to turn dreams into reality and help businesses achieve their goals through cutting-edge technology and design.</p>
-        </div>
-    </section>
-
-    <section id="projects" class="py-16 bg-gray-100">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-gray-900 text-center mb-8">My Projects</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <a href="https://jib.plus" class="block group">
-                    <div class="bg-white shadow rounded overflow-hidden relative">
-                        <img src="/static/project1.png" alt="jib.plus" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <h3 class="text-lg font-bold text-gray-800 group-hover:text-yellow-400">jib.plus</h3>
-                            <p class="text-sm text-gray-600">A platform for selling gift cards with automated identity verification to ensure a seamless customer experience. Instant delivery made easy!</p>
-                        </div>
-                        <div class="absolute inset-0 border-4 border-transparent group-hover:border-yellow-400 transition-all"></div>
+            <div x-cloak x-show="menuOpen" x-transition class="lg:hidden">
+                <div class="mx-6 mb-6 overflow-hidden rounded-3xl border border-white/10 bg-slate-900/95 px-6 py-6 backdrop-blur">
+                    <div class="space-y-4 text-sm font-medium text-white/80">
+                        <a @click="menuOpen = false" href="#services" class="block rounded-xl border border-white/10 px-4 py-3 transition hover:border-brand-400/40 hover:text-white" x-text="copy.nav.services[lang]"></a>
+                        <a @click="menuOpen = false" href="#projects" class="block rounded-xl border border-white/10 px-4 py-3 transition hover:border-brand-400/40 hover:text-white" x-text="copy.nav.projects[lang]"></a>
+                        <a @click="menuOpen = false" href="#process" class="block rounded-xl border border-white/10 px-4 py-3 transition hover:border-brand-400/40 hover:text-white" x-text="copy.nav.process[lang]"></a>
+                        <a @click="menuOpen = false" href="#testimonials" class="block rounded-xl border border-white/10 px-4 py-3 transition hover:border-brand-400/40 hover:text-white" x-text="copy.nav.testimonials[lang]"></a>
+                        <a @click="menuOpen = false" href="#contact" class="block rounded-xl border border-brand-400/60 bg-gradient-to-r from-brand-500/20 to-cyan-400/20 px-4 py-3 text-center transition hover:from-brand-500/30 hover:to-cyan-400/30" x-text="copy.nav.contact[lang]"></a>
                     </div>
-                </a>
-                <a href="#" class="block group">
-                    <div class="bg-white shadow rounded overflow-hidden relative">
-                        <img src="/static/coming_soon.png" alt="coming_soon" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <h3 class="text-lg font-bold text-gray-800 group-hover:text-yellow-400">coming soon.</h3>
-                            <p class="text-sm text-gray-600">coming soon.</p>
-                        </div>
-                        <div class="absolute inset-0 border-4 border-transparent group-hover:border-yellow-400 transition-all"></div>
+                    <div class="mt-5 flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 p-2">
+                        <button @click="setLang('en')" class="flex-1 rounded-xl px-3 py-2 text-sm font-semibold transition" x-bind:class="lang === 'en' ? 'bg-white text-slate-950 shadow' : 'text-white/70 hover:text-white'">EN</button>
+                        <button @click="setLang('fa')" class="flex-1 rounded-xl px-3 py-2 text-sm font-semibold transition" x-bind:class="lang === 'fa' ? 'bg-white text-slate-950 shadow' : 'text-white/70 hover:text-white'">??</button>
                     </div>
-                </a>
-                <a href="#" class="block group">
-                    <div class="bg-white shadow rounded overflow-hidden relative">
-                        <img src="/static/coming_soon.png" alt="coming_soon" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <h3 class="text-lg font-bold text-gray-800 group-hover:text-yellow-400">coming soon.</h3>
-                            <p class="text-sm text-gray-600">coming soon.</p>
+                    <a @click="menuOpen = false" href="#contact" class="mt-4 inline-flex w-full items-center justify-center rounded-full bg-gradient-to-r from-brand-500 to-cyan-400 px-5 py-3 text-sm font-semibold text-slate-950 shadow-glow transition hover:-translate-y-0.5 hover:shadow-xl" x-text="copy.nav.cta[lang]"></a>
+                </div>
+            </div>
+        </header>
+
+        <main id="home">
+            <section class="relative isolate overflow-hidden pt-40 pb-24 sm:pt-48">
+                <div class="absolute left-1/2 top-10 -z-10 h-[38rem] w-[38rem] -translate-x-1/2 bg-gradient-to-br from-brand-500/40 via-fuchsia-500/30 to-sky-400/25 blur-3xl"></div>
+                <div class="mx-auto flex max-w-6xl flex-col gap-16 px-6 lg:grid lg:grid-cols-2 lg:items-center lg:px-8">
+                    <div class="space-y-8" x-bind:class="isFa() ? 'text-right' : ''">
+                        <span class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1 text-[11px] font-semibold text-brand-200" x-bind:class="isFa() ? 'tracking-normal' : 'uppercase tracking-[0.35em]'" x-text="copy.hero.badge[lang]"></span>
+                        <h1 class="text-4xl font-semibold leading-tight text-white sm:text-5xl lg:text-6xl">
+                            <span x-text="copy.hero.headlinePrimary[lang]"></span>
+                            <span class="block bg-gradient-to-r from-brand-300 via-cyan-200 to-emerald-200 bg-clip-text text-transparent" x-text="copy.hero.headlineAccent[lang]"></span>
+                        </h1>
+                        <p class="max-w-xl text-lg text-white/70" x-bind:class="isFa() ? 'ml-auto leading-relaxed' : ''" x-text="copy.hero.blurb[lang]"></p>
+                        <div class="flex flex-wrap items-center gap-4" x-bind:class="isFa() ? 'justify-end' : ''">
+                            <a href="#projects" class="rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-950 shadow-xl shadow-brand-500/30 transition hover:-translate-y-0.5 hover:shadow-brand-400/40" x-text="copy.hero.primaryCta[lang]"></a>
+                            <a href="mailto:info@shahindev.com" class="rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white/80 transition hover:border-brand-300/60 hover:text-white" x-text="copy.hero.secondaryCta[lang]"></a>
                         </div>
-                        <div class="absolute inset-0 border-4 border-transparent group-hover:border-yellow-400 transition-all"></div>
+                        <div class="grid grid-cols-2 gap-6 pt-8 text-sm text-white/70 sm:grid-cols-4" x-bind:class="isFa() ? 'text-right' : ''">
+                            <template x-for="item in copy.hero.stats" :key="item.label.en">
+                                <div>
+                                    <p class="text-3xl font-semibold text-white" x-text="item.value[lang]"></p>
+                                    <p x-text="item.label[lang]"></p>
+                                </div>
+                            </template>
+                        </div>
                     </div>
-                </a>
-            </div>
-        </div>
-    </section>
+                    <div class="relative" x-bind:class="isFa() ? 'lg:order-first' : ''">
+                        <div class="absolute -left-6 -top-10 hidden h-32 w-32 rounded-full bg-gradient-to-br from-brand-400/40 to-cyan-300/20 blur-2xl sm:block"></div>
+                        <div class="relative rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-2xl shadow-brand-900/40 backdrop-blur">
+                            <div class="flex items-center justify-between text-xs text-white/60" x-bind:class="isFa() ? 'flex-row-reverse' : ''">
+                                <span x-text="copy.hero.feature.label[lang]"></span>
+                                <span x-text="copy.hero.feature.year[lang]"></span>
+                            </div>
+                            <div class="mt-5 overflow-hidden rounded-2xl shadow-lg shadow-brand-500/30">
+                                <img src="/static/project1.png" alt="jib.plus interface preview" class="h-72 w-full object-cover">
+                            </div>
+                            <div class="mt-6 space-y-3" x-bind:class="isFa() ? 'text-right' : ''">
+                                <h2 class="text-2xl font-semibold text-white" x-text="copy.hero.feature.title[lang]"></h2>
+                                <p class="text-sm leading-relaxed text-white/60" x-text="copy.hero.feature.body[lang]"></p>
+                                <a href="https://jib.plus" target="_blank" class="inline-flex items-center gap-2 text-sm font-semibold text-brand-200 transition hover:text-white" x-bind:class="isFa() ? 'flex-row-reverse' : ''">
+                                    <span x-text="copy.hero.feature.cta[lang]"></span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75H9m8.25 0v8.25M17.25 6.75L6.75 17.25" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="absolute -bottom-8 -right-6 hidden h-24 w-24 rounded-full bg-gradient-to-br from-emerald-400/30 to-brand-500/30 blur-xl sm:block"></div>
+                    </div>
+                </div>
+            </section>
 
-    <section id="contact" class="py-16 bg-white">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4">Contact Me</h2>
-            <p class="text-lg text-gray-700">Feel free to reach out to me via email or connect on social media.</p>
-            <div class="mt-6">
-                <a href="mailto:info@shahindev.com" class="inline-block bg-yellow-400 text-gray-900 font-bold py-2 px-6 rounded shadow hover:bg-yellow-500">Email Me</a>
-            </div>
-            <div class="mt-4 flex justify-center space-x-4">
-                <a href="https://twitter.com/shahin_g_rostami" target="_blank" class="text-gray-800 hover:text-yellow-400">
-                    <img src="/static/twitter-x.svg" alt="Twitter" class="w-8 h-8">
-                </a>
-                <a href="https://instagram.com/shahin_g_rostami" target="_blank" class="text-gray-800 hover:text-yellow-400">
-                    <img src="/static/instagram.svg" alt="Instagram" class="w-8 h-8">
-                </a>
-            </div>
-        </div>
-    </section>
+            <section id="services" class="relative border-t border-white/10 bg-slate-950/90 py-24">
+                <div class="mx-auto max-w-6xl px-6 lg:px-8">
+                    <div class="mx-auto max-w-3xl space-y-4 text-center" x-bind:class="isFa() ? 'text-right lg:text-center' : ''">
+                        <span class="inline-block rounded-full border border-white/10 bg-white/5 px-4 py-1 text-xs font-semibold text-brand-200" x-bind:class="isFa() ? 'tracking-normal' : 'uppercase tracking-[0.35em]'" x-text="copy.services.tag[lang]"></span>
+                        <h2 class="text-3xl font-semibold text-white sm:text-4xl" x-text="copy.services.title[lang]"></h2>
+                        <p class="text-base text-white/60" x-text="copy.services.blurb[lang]"></p>
+                    </div>
+                    <div class="mt-16 grid gap-10 md:grid-cols-2 xl:grid-cols-3">
+                        <div class="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.05] p-8 shadow-lg shadow-black/40 transition hover:-translate-y-1 hover:border-brand-400/40">
+                            <div class="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-brand-500/20 to-cyan-400/30 text-brand-200">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75v-3a3.75 3.75 0 117.5 0v3M6 9.75h15M4.5 12.75h15M3 15.75h15M3 18.75h12" />
+                                </svg>
+                            </div>
+                            <h3 class="mt-6 text-xl font-semibold text-white" x-text="copy.services.cards[0].title[lang]"></h3>
+                            <p class="mt-3 text-sm leading-relaxed text-white/60" x-text="copy.services.cards[0].body[lang]"></p>
+                            <ul class="mt-6 space-y-2 text-sm text-white/50">
+                                <template x-for="bullet in copy.services.cards[0].bullets" :key="bullet.en">
+                                    <li x-text="bullet[lang]"></li>
+                                </template>
+                            </ul>
+                        </div>
+                        <div class="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.05] p-8 shadow-lg shadow-black/40 transition hover:-translate-y-1 hover:border-brand-400/40">
+                            <div class="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-brand-500/20 to-cyan-400/30 text-brand-200">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 3.75h15l-1.5 4.5h-12l-1.5-4.5zM3 8.25h18M4.5 12.75h15M6 17.25h12" />
+                                </svg>
+                            </div>
+                            <h3 class="mt-6 text-xl font-semibold text-white" x-text="copy.services.cards[1].title[lang]"></h3>
+                            <p class="mt-3 text-sm leading-relaxed text-white/60" x-text="copy.services.cards[1].body[lang]"></p>
+                            <ul class="mt-6 space-y-2 text-sm text-white/50">
+                                <template x-for="bullet in copy.services.cards[1].bullets" :key="bullet.en">
+                                    <li x-text="bullet[lang]"></li>
+                                </template>
+                            </ul>
+                        </div>
+                        <div class="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.05] p-8 shadow-lg shadow-black/40 transition hover:-translate-y-1 hover:border-brand-400/40">
+                            <div class="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-brand-500/20 to-cyan-400/30 text-brand-200">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 3.75h6M12 3.75v12m-6 4.5h12" />
+                                </svg>
+                            </div>
+                            <h3 class="mt-6 text-xl font-semibold text-white" x-text="copy.services.cards[2].title[lang]"></h3>
+                            <p class="mt-3 text-sm leading-relaxed text-white/60" x-text="copy.services.cards[2].body[lang]"></p>
+                            <ul class="mt-6 space-y-2 text-sm text-white/50">
+                                <template x-for="bullet in copy.services.cards[2].bullets" :key="bullet.en">
+                                    <li x-text="bullet[lang]"></li>
+                                </template>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-    <footer class="bg-gray-800 text-white py-4">
-        <div class="container mx-auto text-center">
-            <p>&copy; 2025 Shahin Developer. All rights reserved.</p>
-            <p>Website: <a href="https://shahindev.com" class="text-yellow-400 hover:underline">shahindev.com</a></p>
-        </div>
-    </footer>
+            <section id="projects" class="relative border-t border-white/10 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 py-24">
+                <div class="mx-auto max-w-6xl px-6 lg:px-8">
+                    <div class="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between" x-bind:class="isFa() ? 'lg:flex-row-reverse' : ''">
+                        <div class="max-w-2xl space-y-4" x-bind:class="isFa() ? 'text-right' : ''">
+                            <span class="inline-block rounded-full border border-white/10 bg-white/5 px-4 py-1 text-xs font-semibold text-brand-200" x-bind:class="isFa() ? 'tracking-normal' : 'uppercase tracking-[0.35em]'" x-text="copy.projects.tag[lang]"></span>
+                            <h2 class="text-3xl font-semibold text-white sm:text-4xl" x-text="copy.projects.title[lang]"></h2>
+                            <p class="text-base text-white/60" x-text="copy.projects.blurb[lang]"></p>
+                        </div>
+                        <a href="mailto:info@shahindev.com" class="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-3 text-sm font-semibold text-white/80 transition hover:border-brand-300/60 hover:text-white" x-bind:class="isFa() ? 'self-end flex-row-reverse' : ''">
+                            <span x-text="copy.projects.cta[lang]"></span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 12h12M12 6l6 6-6 6" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="mt-16 grid gap-10 lg:grid-cols-3">
+                        <a href="https://jib.plus" target="_blank" class="group relative flex flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/[0.04] p-6 shadow-xl shadow-black/40 transition hover:-translate-y-1 hover:shadow-2xl hover:shadow-brand-500/30" x-bind:class="isFa() ? 'text-right' : ''">
+                            <div class="relative overflow-hidden rounded-2xl">
+                                <img src="/static/project1.png" alt="jib.plus project" class="h-52 w-full object-cover transition duration-700 group-hover:scale-105">
+                                <span class="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1 text-[11px] font-semibold text-slate-900" x-bind:class="isFa() ? 'left-auto right-4 tracking-normal' : 'uppercase tracking-[0.3em]'" x-text="copy.projects.cards[0].badge[lang]"></span>
+                            </div>
+                            <div class="mt-6 space-y-3">
+                                <h3 class="text-xl font-semibold text-white" x-text="copy.projects.cards[0].title[lang]"></h3>
+                                <p class="text-sm text-white/60" x-text="copy.projects.cards[0].body[lang]"></p>
+                                <div class="flex flex-wrap gap-2 text-[12px] text-brand-200/80" x-bind:class="isFa() ? 'tracking-normal' : 'uppercase tracking-[0.25em]'">
+                                    <template x-for="tag in copy.projects.cards[0].tags" :key="tag">
+                                        <span x-text="tag"></span>
+                                    </template>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="relative flex flex-col overflow-hidden rounded-3xl border border-dashed border-brand-300/40 bg-white/[0.03] p-6 backdrop-blur" x-bind:class="isFa() ? 'text-right' : ''">
+                            <div class="flex items-center justify-between" x-bind:class="isFa() ? 'flex-row-reverse' : ''">
+                                <span class="rounded-full bg-brand-500/20 px-3 py-1 text-[11px] font-semibold text-brand-200" x-bind:class="isFa() ? 'tracking-normal' : 'uppercase tracking-[0.3em]'" x-text="copy.projects.cards[1].badge[lang]"></span>
+                                <span class="text-xs text-white/40" x-bind:class="isFa() ? 'tracking-normal' : 'uppercase tracking-[0.3em]'" x-text="copy.projects.cards[1].timeline[lang]"></span>
+                            </div>
+                            <div class="mt-5 overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+                                <img src="/static/coming_soon.png" alt="Coming soon project teaser" class="h-52 w-full object-cover opacity-90">
+                            </div>
+                            <div class="mt-6 space-y-3">
+                                <h3 class="text-xl font-semibold text-white" x-text="copy.projects.cards[1].title[lang]"></h3>
+                                <p class="text-sm text-white/60" x-text="copy.projects.cards[1].body[lang]"></p>
+                                <div class="flex flex-wrap gap-2 text-[12px] text-brand-200/80" x-bind:class="isFa() ? 'tracking-normal' : 'uppercase tracking-[0.25em]'">
+                                    <template x-for="tag in copy.projects.cards[1].tags" :key="tag">
+                                        <span x-text="tag"></span>
+                                    </template>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative flex flex-col overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-b from-white/10 to-transparent p-6 shadow-xl shadow-brand-900/30" x-bind:class="isFa() ? 'text-right' : ''">
+                            <div class="flex items-center justify-between" x-bind:class="isFa() ? 'flex-row-reverse' : ''">
+                                <span class="rounded-full bg-emerald-400/20 px-3 py-1 text-[11px] font-semibold text-emerald-200" x-bind:class="isFa() ? 'tracking-normal' : 'uppercase tracking-[0.3em]'" x-text="copy.projects.cards[2].badge[lang]"></span>
+                                <span class="text-xs text-white/40" x-bind:class="isFa() ? 'tracking-normal' : 'uppercase tracking-[0.3em]'" x-text="copy.projects.cards[2].timeline[lang]"></span>
+                            </div>
+                            <div class="mt-7 space-y-4">
+                                <h3 class="text-2xl font-semibold text-white" x-text="copy.projects.cards[2].title[lang]"></h3>
+                                <p class="text-sm text-white/60" x-text="copy.projects.cards[2].body[lang]"></p>
+                                <ul class="space-y-3 text-sm text-white/55">
+                                    <template x-for="bullet in copy.projects.cards[2].bullets" :key="bullet.en">
+                                        <li x-text="bullet[lang]"></li>
+                                    </template>
+                                </ul>
+                                <a href="mailto:info@shahindev.com" class="inline-flex items-center gap-2 text-sm font-semibold text-brand-200 transition hover:text-white" x-bind:class="isFa() ? 'flex-row-reverse' : ''">
+                                    <span x-text="copy.nav.cta[lang]"></span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 12h12M12 6l6 6-6 6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="process" class="relative border-t border-white/10 bg-slate-950/95 py-24">
+                <div class="mx-auto max-w-6xl px-6 lg:px-8">
+                    <div class="mx-auto max-w-3xl space-y-4 text-center" x-bind:class="isFa() ? 'text-right lg:text-center' : ''">
+                        <span class="inline-block rounded-full border border-white/10 bg-white/5 px-4 py-1 text-xs font-semibold text-brand-200" x-bind:class="isFa() ? 'tracking-normal' : 'uppercase tracking-[0.35em]'" x-text="copy.process.tag[lang]"></span>
+                        <h2 class="text-3xl font-semibold text-white sm:text-4xl" x-text="copy.process.title[lang]"></h2>
+                        <p class="text-base text-white/60" x-text="copy.process.blurb[lang]"></p>
+                    </div>
+                    <div class="mt-16 grid gap-10 lg:grid-cols-3">
+                        <template x-for="step in copy.process.steps" :key="step.index.en">
+                            <div class="flex flex-col gap-5 rounded-3xl border border-white/10 bg-white/[0.04] p-8 shadow-lg shadow-black/40" x-bind:class="isFa() ? 'text-right' : ''">
+                                <div class="flex items-center gap-4" x-bind:class="isFa() ? 'flex-row-reverse' : ''">
+                                    <span class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-sm font-semibold text-brand-200" x-text="step.index[lang]"></span>
+                                    <h3 class="text-xl font-semibold text-white" x-text="step.title[lang]"></h3>
+                                </div>
+                                <p class="text-sm text-white/60" x-text="step.body[lang]"></p>
+                                <ul class="space-y-2 text-sm text-white/50">
+                                    <template x-for="bullet in step.bullets" :key="bullet.en">
+                                        <li x-text="bullet[lang]"></li>
+                                    </template>
+                                </ul>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </section>
+            <section id="testimonials" class="relative border-t border-white/10 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 py-24">
+                <div class="mx-auto max-w-6xl px-6 lg:px-8">
+                    <div class="mx-auto max-w-3xl space-y-4 text-center" x-bind:class="isFa() ? 'text-right lg:text-center' : ''">
+                        <span class="inline-block rounded-full border border-white/10 bg-white/5 px-4 py-1 text-xs font-semibold text-brand-200" x-bind:class="isFa() ? 'tracking-normal' : 'uppercase tracking-[0.35em]'" x-text="copy.testimonials.tag[lang]"></span>
+                        <h2 class="text-3xl font-semibold text-white sm:text-4xl" x-text="copy.testimonials.title[lang]"></h2>
+                        <p class="text-base text-white/60" x-text="copy.testimonials.blurb[lang]"></p>
+                    </div>
+                    <div class="mt-16 grid gap-8 md:grid-cols-2">
+                        <template x-for="item in copy.testimonials.items" :key="item.name.en">
+                            <article class="flex h-full flex-col gap-6 rounded-3xl border border-white/10 bg-white/[0.06] p-8 shadow-lg shadow-black/40" x-bind:class="isFa() ? 'text-right' : ''">
+                                <div class="flex items-center gap-4" x-bind:class="isFa() ? 'flex-row-reverse' : ''">
+                                    <div class="h-12 w-12 rounded-full bg-gradient-to-br from-brand-500/30 to-cyan-400/30"></div>
+                                    <div>
+                                        <h3 class="text-base font-semibold text-white" x-text="item.name[lang]"></h3>
+                                        <p class="text-xs text-white/50" x-bind:class="isFa() ? '' : 'uppercase tracking-[0.3em]'" x-text="item.role[lang]"></p>
+                                    </div>
+                                </div>
+                                <p class="text-sm leading-relaxed text-white/70" x-text="item.quote[lang]"></p>
+                            </article>
+                        </template>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="relative border-t border-white/10 bg-slate-950/95 py-24">
+                <div class="absolute inset-x-0 -top-20 -z-10 flex justify-center blur-3xl">
+                    <div class="h-64 w-[36rem] bg-gradient-to-br from-brand-500/30 via-cyan-400/20 to-emerald-300/20 opacity-70"></div>
+                </div>
+                <div class="mx-auto max-w-6xl px-6 lg:px-8">
+                    <div class="grid gap-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+                        <div class="space-y-6" x-bind:class="isFa() ? 'text-right' : ''">
+                            <span class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1 text-xs font-semibold text-brand-200" x-bind:class="isFa() ? 'tracking-normal' : 'uppercase tracking-[0.35em]'" x-text="copy.contact.tag[lang]"></span>
+                            <h2 class="text-3xl font-semibold text-white sm:text-4xl" x-text="copy.contact.title[lang]"></h2>
+                            <p class="text-base text-white/65" x-text="copy.contact.blurb[lang]"></p>
+                            <div class="space-y-4 text-sm text-white/70">
+                                <div class="flex items-center gap-3" x-bind:class="isFa() ? 'flex-row-reverse' : ''">
+                                    <span class="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-brand-200">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 6.75l7.5 4.5 7.5-4.5M4.5 17.25h15v-9" />
+                                        </svg>
+                                    </span>
+                                    <a href="mailto:info@shahindev.com" class="font-medium text-white transition hover:text-brand-200" x-text="copy.contact.emailLabel[lang]"></a>
+                                </div>
+                                <div class="flex items-center gap-3" x-bind:class="isFa() ? 'flex-row-reverse' : ''">
+                                    <span class="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-brand-200">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5h7.5a2.25 2.25 0 012.25 2.25v10.5A2.25 2.25 0 0115.75 19.5h-7.5A2.25 2.25 0 016 17.25V6.75A2.25 2.25 0 018.25 4.5z" />
+                                        </svg>
+                                    </span>
+                                    <div class="space-x-3" x-bind:class="isFa() ? 'space-x-reverse text-right' : ''">
+                                        <a href="https://twitter.com/shahin_g_rostami" target="_blank" class="text-white/70 transition hover:text-brand-200" x-text="copy.contact.socials.twitter[lang]"></a>
+                                        <span class="text-white/20">/</span>
+                                        <a href="https://instagram.com/shahin_g_rostami" target="_blank" class="text-white/70 transition hover:text-brand-200" x-text="copy.contact.socials.instagram[lang]"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.05] p-10 shadow-xl shadow-black/40 backdrop-blur" x-bind:class="isFa() ? 'text-right' : ''">
+                            <div class="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-gradient-to-br from-brand-500/20 to-cyan-400/20 blur-2xl"></div>
+                            <div class="relative space-y-6">
+                                <h3 class="text-2xl font-semibold text-white" x-text="copy.contact.panelTitle[lang]"></h3>
+                                <p class="text-sm leading-relaxed text-white/60" x-text="copy.contact.panelBody[lang]"></p>
+                                <ul class="space-y-3 text-sm text-white/55">
+                                    <template x-for="bullet in copy.contact.panelBullets" :key="bullet.en">
+                                        <li x-text="bullet[lang]"></li>
+                                    </template>
+                                </ul>
+                                <a href="mailto:info@shahindev.com?subject=Project%20Kickoff%20with%20Shahin%20Developer" class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-brand-500 to-cyan-400 px-6 py-3 text-sm font-semibold text-slate-950 shadow-glow transition hover:-translate-y-0.5" x-bind:class="isFa() ? 'flex-row-reverse' : ''">
+                                    <span x-text="copy.contact.panelCta[lang]"></span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 12h12M12 6l6 6-6 6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="border-t border-white/10 bg-slate-950/95 py-12">
+            <div class="mx-auto flex max-w-6xl flex-col gap-10 px-6 lg:flex-row lg:justify-between lg:px-8" x-bind:class="isFa() ? 'lg:flex-row-reverse' : ''">
+                <div class="max-w-sm space-y-4" x-bind:class="isFa() ? 'text-right' : ''">
+                    <a href="#home" class="flex items-center space-x-3" x-bind:class="isFa() ? 'space-x-reverse' : ''">
+                        <img src="/static/logo.svg" alt="Shahin Developer logo" class="h-10 w-10">
+                        <div>
+                            <span class="block text-xs text-white/50" x-bind:class="isFa() ? '' : 'uppercase tracking-[0.35em]'" x-text="isFa() ? copy.footer.brandTag.fa : copy.footer.brandTag.en"></span>
+                            <span class="block text-base font-semibold text-white" x-text="isFa() ? copy.footer.brandSubtitle.fa : copy.footer.brandSubtitle.en"></span>
+                        </div>
+                    </a>
+                    <p class="text-sm text-white/55" x-text="copy.footer.about[lang]"></p>
+                </div>
+                <div class="grid flex-1 gap-10 sm:grid-cols-3" x-bind:class="isFa() ? 'text-right' : ''">
+                    <div class="space-y-3 text-sm text-white/60">
+                        <h4 class="text-sm font-semibold uppercase tracking-[0.25em] text-white/70" x-bind:class="isFa() ? 'tracking-normal' : ''" x-text="copy.footer.columns.studio.heading[lang]"></h4>
+                        <template x-for="link in copy.footer.columns.studio.links" :key="link.href">
+                            <a :href="link.href" class="block transition hover:text-white" x-text="link.label[lang]"></a>
+                        </template>
+                    </div>
+                    <div class="space-y-3 text-sm text-white/60">
+                        <h4 class="text-sm font-semibold uppercase tracking-[0.25em] text-white/70" x-bind:class="isFa() ? 'tracking-normal' : ''" x-text="copy.footer.columns.connect.heading[lang]"></h4>
+                        <template x-for="link in copy.footer.columns.connect.links" :key="link.href">
+                            <a :href="link.href" class="block transition hover:text-white" x-text="link.label[lang]" x-bind:target="link.href.startsWith('http') ? '_blank' : null"></a>
+                        </template>
+                    </div>
+                    <div class="space-y-3 text-sm text-white/60">
+                        <h4 class="text-sm font-semibold uppercase tracking-[0.25em] text-white/70" x-bind:class="isFa() ? 'tracking-normal' : ''" x-text="copy.footer.columns.newsletter.heading[lang]"></h4>
+                        <p class="text-xs text-white/40" x-text="copy.footer.columns.newsletter.text[lang]"></p>
+                        <a href="mailto:info@shahindev.com?subject=Subscribe%20to%20Insights" class="inline-flex items-center gap-2 text-sm font-semibold text-brand-200 transition hover:text-white" x-bind:class="isFa() ? 'flex-row-reverse' : ''">
+                            <span x-text="copy.footer.columns.newsletter.cta[lang]"></span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 12h12M12 6l6 6-6 6" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mx-auto mt-10 flex max-w-6xl flex-col gap-4 border-t border-white/10 px-6 pt-6 text-xs text-white/40 lg:flex-row lg:items-center lg:justify-between lg:px-8" x-bind:class="isFa() ? 'lg:flex-row-reverse text-right' : ''">
+                <p x-html="copy.footer.meta.rights[lang]"></p>
+                <p>
+                    <span x-text="copy.footer.meta.website[lang]"></span>:
+                    <a href="https://shahindev.com" class="text-brand-200 transition hover:text-white">shahindev.com</a>
+                </p>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
+
+
