@@ -40,42 +40,6 @@
             }
         };
     </script>
-    <script>
-        (function () {
-            var storageKey = 'preferredLanguage';
-            function persist(lang) {
-                try {
-                    window.localStorage.setItem(storageKey, lang);
-                } catch (error) {
-                    /* ignore */
-                }
-            }
-            function targetFor(lang) {
-                return lang === 'fa' ? 'fa.html' : 'en.html';
-            }
-            function redirect(lang, replace) {
-                var destination = targetFor(lang);
-                if (replace) {
-                    window.location.replace(destination);
-                } else {
-                    window.location.href = destination;
-                }
-            }
-            try {
-                var stored = window.localStorage.getItem(storageKey);
-                if (stored === 'fa' || stored === 'en') {
-                    redirect(stored, true);
-                    return;
-                }
-            } catch (error) {
-                /* ignore */
-            }
-            window.selectLanguage = function (lang) {
-                persist(lang);
-                redirect(lang, false);
-            };
-        })();
-    </script>
     <style>
         html { scroll-behavior: smooth; }
         body { font-family: 'Vazirmatn', 'Tahoma', 'Arial', sans-serif; }
@@ -92,23 +56,23 @@
                     <img src="/static/logo.svg" alt="Shahin Developer logo" class="h-10 w-10">
                 </div>
                 <div class="space-y-4">
-                    <h1 class="text-3xl font-semibold text-white sm:text-4xl">زبان مورد نظرتان را انتخاب کنید</h1>
+                    <h1 class="text-3xl font-semibold text-white sm:text-4xl">زبان مورد نظر خود را انتخاب کنید</h1>
                     <p class="text-sm text-white/70" dir="ltr">Choose the language you would like to browse Shahin Developer in.</p>
-                    <p class="text-sm text-white/50">پس از انتخاب، این زبان به عنوان پیش‌فرض شما ذخیره می‌شود.</p>
+                    <p class="text-sm text-white/50">هر زمان بخواهید می‌توانید از نسخه دیگر نیز استفاده کنید.</p>
                 </div>
                 <div class="grid gap-6 sm:grid-cols-2">
-                    <button type="button" onclick="selectLanguage('fa')" class="group relative overflow-hidden rounded-3xl border border-white/15 bg-white/[0.08] p-8 text-right transition hover:-translate-y-1 hover:border-brand-400/40 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-300">
+                    <a href="fa.html" class="group relative block overflow-hidden rounded-3xl border border-white/15 bg-white/[0.08] p-8 text-right transition hover:-translate-y-1 hover:border-brand-400/40 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-300">
                         <div class="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-gradient-to-br from-brand-500/30 to-cyan-400/30 blur-2xl opacity-0 transition group-hover:opacity-100"></div>
                         <div class="relative space-y-4">
                             <span class="inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/10 px-4 py-1 text-sm font-semibold text-white/80">
                                 <span class="flex h-9 w-9 items-center justify-center rounded-full bg-white/15 text-base font-bold text-white">فا</span>
-                                <span>تجربه‌ی راست‌به‌چپ</span>
+                                <span>نسخه فارسی</span>
                             </span>
                             <h2 class="text-2xl font-semibold text-white">فارسی</h2>
-                            <p class="text-sm leading-relaxed text-white/60">محیط کامل فارسی با تایپوگرافی بهینه و پیمایش راست‌به‌چپ.</p>
+                            <p class="text-sm leading-relaxed text-white/60">رابط کاربری راست‌چین با تایپوگرافی فارسی و محتوای بومی‌سازی‌شده.</p>
                         </div>
-                    </button>
-                    <button type="button" onclick="selectLanguage('en')" class="group relative overflow-hidden rounded-3xl border border-white/15 bg-white/[0.08] p-8 text-left transition hover:-translate-y-1 hover:border-brand-400/40 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-300" dir="ltr">
+                    </a>
+                    <a href="en.html" class="group relative block overflow-hidden rounded-3xl border border-white/15 bg-white/[0.08] p-8 text-left transition hover:-translate-y-1 hover:border-brand-400/40 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-300" dir="ltr">
                         <div class="absolute -left-10 -top-10 h-32 w-32 rounded-full bg-gradient-to-br from-amber-400/25 to-brand-500/25 blur-2xl opacity-0 transition group-hover:opacity-100"></div>
                         <div class="relative space-y-4">
                             <span class="inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/10 px-4 py-1 text-sm font-semibold text-white/80">
@@ -116,11 +80,11 @@
                                 <span>Left-to-right layout</span>
                             </span>
                             <h2 class="text-2xl font-semibold text-white">English</h2>
-                            <p class="text-sm leading-relaxed text-white/60">A polished English interface with familiar left-to-right navigation.</p>
+                            <p class="text-sm leading-relaxed text-white/60">Polished English experience with familiar left-to-right navigation.</p>
                         </div>
-                    </button>
+                    </a>
                 </div>
-                <p class="text-xs text-white/50">در هر زمان می‌توانید از منوی بالای صفحات زبان را تغییر دهید؛ تغییر جدید به عنوان زبان پیش‌فرض ذخیره خواهد شد.</p>
+                <p class="text-xs text-white/50">بعد از ورود به سایت می‌توانید از سربرگ نسخه دیگر را نیز انتخاب کنید.</p>
             </div>
         </main>
     </div>
